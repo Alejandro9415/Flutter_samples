@@ -58,9 +58,10 @@ class _TrackingTextInputState extends State<TrackingTextInput> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      
         decoration: InputDecoration(
+          border: InputBorder.none,
           hintText: widget.hint,
-          labelText: widget.label,
         ),
         key: _fieldKey,
         controller: _textController,

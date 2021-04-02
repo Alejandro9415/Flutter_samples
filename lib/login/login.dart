@@ -70,14 +70,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: Column(
                     children: <Widget>[
                       TrackingTextInput(
-                          label: "Email",
                           hint: "Email",
                           onCaretMoved: (Offset caret) {
                             provider.teddyController.lookAt(caret);
                           }),
+                          Divider(),
                       TrackingTextInput(
-                        label: "Password",
-                        hint: "password",
+                        hint: "Password",
                         isObscured: true,
                         onCaretMoved: (Offset caret) {
                          provider.teddyController.coverEyes(caret != null);
