@@ -111,7 +111,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 //container for raised button
                 GestureDetector(
-                  onTap: () => provider.pressed(),
+                  onTap: () => provider.teddyController.submitPassword(),
                   child: Material(
                     borderRadius: BorderRadius.circular(10.0),
                     color: Color(0xFFF01C62),

@@ -30,10 +30,10 @@ class Service extends ChangeNotifier {
   void pressed() {
     if (passwordController.text.compareTo(pass) == 0 &&
         userController.text.compareTo(user) == 0) {
-      animationType = "success";
+    teddyController.onCompleted('success');
        notifyListeners();
     } else {
-      animationType = "fail";
+       teddyController.onCompleted('fail');
        notifyListeners();
     }
   }
