@@ -45,7 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: ClipOval(
                           child: FlareActor(
                             "assets/Teddy.flr",
-                            alignment: Alignment.center,
+                            alignment: Alignment.bottomCenter,
                             fit: BoxFit.contain,
                             controller: provider.teddyController,
                             animation: provider.animationType,
