@@ -44,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: CircleAvatar(
                         child: ClipOval(
                           child: FlareActor(
-                            "assets/teddy_test.flr",
+                            "assets/Teddy.flr",
                             alignment: Alignment.center,
                             fit: BoxFit.contain,
                             controller: provider.teddyController,
@@ -80,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         isObscured: true,
                         onCaretMoved: (Offset caret) {
                          provider.teddyController.coverEyes(caret != null);
-                          // provider.teddyController.lookAt(null);
+                          provider.teddyController.lookAt(null);
                         },
                         onTextChanged: (String value) {
                           provider.teddyController.setPassword(value);

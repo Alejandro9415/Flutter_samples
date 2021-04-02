@@ -116,6 +116,7 @@ class TeddyController extends FlareControls {
       return;
     }
     _isCoveringEyes = cover;
+    print(_isCoveringEyes);
     if (cover) {
       play("hands_up");
     } else {
